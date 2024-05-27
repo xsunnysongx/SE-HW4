@@ -3,6 +3,8 @@
 #include <vector>
 #include <list>
 #include <iomanip>      // for setw()
+#include <iostream>
+#include <iostream>
 
 struct Edge{
     int from, to, weight;
@@ -114,7 +116,7 @@ int main(){
     g6.AddEdge(5, 0, 3);g6.AddEdge(5, 4, 6);
     g6.AddEdge(6, 1, 4);g6.AddEdge(6, 2, 8);g6.AddEdge(6, 3, 9);g6.AddEdge(6, 4, 2);
 
-    std::cout < "MST found by Kruskal:\n";
+    std::cout << "MST found by Kruskal:\n";
     g6.KruskalMST();
 
     
