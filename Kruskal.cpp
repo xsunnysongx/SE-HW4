@@ -8,7 +8,7 @@ struct Edge{
     int from, to, weight;
     Edge(){};
     Edge(int u, int v, int w):from(u), to(v), weight(w){};
-}
+};
 
 class GraphMST{
 private:
@@ -71,7 +71,7 @@ void GraphMST::GetSortedEdge(std::vector<struct Edge> &edgearray){
         }
     }
     // 用std::sort 排序, 自己定義一個comparison
-    std::sort(edgearray,begin(), edgearray.end(), WeightComp);
+    std::sort(edgearray.begin(), edgearray.end(), WeightComp);
 }
 void GraphMST::KruskalMST(){
 
